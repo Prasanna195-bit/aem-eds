@@ -1,0 +1,41 @@
+/*
+ * Gallery Block CSS
+ * Styles for the gallery block, 1 column, multiple rows, each row contains an image.
+ * Mobile-first, responsive, scoped to .gallery
+ */
+.gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    align-items: center;
+}
+
+.gallery-row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.gallery-row img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    display: block;
+}
+
+@media (min-width: 600px) {
+    .gallery {
+        gap: 1.5rem;
+    }
+    .gallery-row img {
+        max-width: 80%;
+    }
+}
+
+@media (min-width: 900px) {
+    .gallery-row img {
+        max-width: 60%;
+    }
+}
