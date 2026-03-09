@@ -63,10 +63,12 @@
         gap: 2.5rem;
         padding: 3.5rem 0;
     }
+    
     .gallery-row {
         padding: 2rem;
         max-width: 900px;
     }
+
     .gallery-row img {
         max-width: 90%;
         max-height: 520px;
@@ -78,6 +80,7 @@
         max-width: 1200px;
         padding: 2.5rem;
     }
+
     .gallery-row img {
         max-width: 80%;
         max-height: 600px;
