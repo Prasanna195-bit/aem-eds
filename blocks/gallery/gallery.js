@@ -13,7 +13,7 @@ export default async function decorate(block) {
     if (!cell) return;
     let picture = cell.querySelector("picture");
     if (!picture) {
-      let img = cell.querySelector("img");
+      const img = cell.querySelector("img");
       let url = null;
       let alt = "";
       if (!img) {
@@ -44,7 +44,9 @@ export default async function decorate(block) {
   // Remove table if present, keep only gallery rows
   const table = block.querySelector("table");
   if (table) {
-    while (table.firstChild) block.appendChild(table.firstChild);
+    while (table.firstChild) {
+      block.appendChild(table.firstChild);
+    }
     table.remove();
   }
 }
