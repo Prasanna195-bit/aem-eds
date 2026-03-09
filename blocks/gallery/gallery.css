@@ -13,7 +13,7 @@
     background: var(--light-color, #f8f8f8);
     padding: 2.5rem 0;
     border-radius: 18px;
-    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 4px 24px rgb(0 0 0 / 4%);
 }
 
 .gallery-row {
@@ -24,7 +24,7 @@
     justify-content: center;
     background: #fff;
     border-radius: 14px;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+    box-shadow: 0 2px 12px rgb(0 0 0 / 7%);
     transition:
         box-shadow 0.2s,
         transform 0.2s;
@@ -33,7 +33,7 @@
 }
 
 .gallery-row:hover {
-    box-shadow: 0 8px 32px rgba(60, 80, 180, 0.1);
+    box-shadow: 0 8px 32px rgb(60 80 180 / 10%);
     transform: translateY(-2px) scale(1.01);
 }
 
@@ -52,19 +52,19 @@
     aspect-ratio: 16/9;
     object-fit: cover;
     border-radius: 10px;
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 1px 6px rgb(0 0 0 / 6%);
     display: block;
     background: #eee;
     transition: box-shadow 0.2s;
 }
 
-@media (min-width: 600px) {
+@media (width >= 600px) {
     .gallery {
         gap: 2.5rem;
         padding: 3.5rem 0;
     }
     .gallery-row {
-        padding: 2rem 2rem;
+        padding: 2rem;
         max-width: 900px;
     }
     .gallery-row img {
@@ -73,10 +73,10 @@
     }
 }
 
-@media (min-width: 900px) {
+@media (width >= 900px) {
     .gallery-row {
         max-width: 1200px;
-        padding: 2.5rem 2.5rem;
+        padding: 2.5rem;
     }
     .gallery-row img {
         max-width: 80%;
